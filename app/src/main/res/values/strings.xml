@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">The Random Words App - Welcome</string>
+    <string name="infobox">Click on the first button for "Word of the Day". Click again for a random word. Not every word has a definition; if no definition is returned, wait a second and try another word.</string>
+    <string name="wordButton">Get a Random Word Instead</string>
+    <string name="originalWordButton">Get "Word of The Day"</string>
+    <string name="definitionButton">Get Word Definition</string>
+    <string name="definitionBox">Empty Definition</string>
+</resources>
