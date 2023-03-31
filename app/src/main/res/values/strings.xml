@@ -4,5 +4,5 @@
     <string name="wordButton">Get a Random Word Instead</string>
     <string name="originalWordButton">Get "Word of The Day"</string>
     <string name="definitionButton">Get Word Definition</string>
-    <string name="definitionBox">Empty Definition</string>
+    <string name="definitionBox">No Definition Found. Try Again in 2 Seconds.</string>
 </resources>
