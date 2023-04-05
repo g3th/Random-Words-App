@@ -57,9 +57,6 @@ class MainActivity : AppCompatActivity() {
             return definition.toString()
         }
 
-        fun definitionResult() : String{
-            return getWordDefinition()
-        }
         var state = false
         binding.definitionButton.text = getString(R.string.definitionButton)
 
@@ -70,17 +67,16 @@ class MainActivity : AppCompatActivity() {
 
         binding.definitionButton.setOnClickListener{
 
-            if (definitionResult().isEmpty()){
+            if (getWordDefinition().isEmpty()){
               binding.definitionBox.text = getString(R.string.definitionBox)
             }
-            else if (definitionResult().length > 30){
-                val shorterDefinition = definitionResult().split(".")
+            else if (getWordDefinition().length > 30){
+                val shorterDefinition = getWordDefinition().split(".")
                 binding.definitionBox.text = shorterDefinition[0].replaceFirstChar { it.uppercase() } + "."
             }
             else {
-                binding.definitionBox.text = definitionResult().replaceFirstChar {it.uppercase()}
+                binding.definitionBox.text = getWordDefinition().replaceFirstChar {it.uppercase()}
             }
         }
-
     }
 }
